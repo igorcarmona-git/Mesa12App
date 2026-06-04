@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mesa 12 - Light Theme -->
+
+    <!-- 1. Primary -->
+    <color name="md_theme_primary">#0E7A43</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+
+    <!-- 2. Primary Container -->
+    <color name="md_theme_primaryContainer">#B9F6D0</color>
+    <color name="md_theme_onPrimaryContainer">#002111</color>
+
+    <!-- 3. Secondary -->
+    <color name="md_theme_secondary">#5B634F</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+
+    <!-- 4. Secondary Container -->
+    <color name="md_theme_secondaryContainer">#DFE8CF</color>
+    <color name="md_theme_onSecondaryContainer">#181E12</color>
+
+    <!-- 5. Tertiary -->
+    <color name="md_theme_tertiary">#A86400</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+
+    <!-- 6. Tertiary Container -->
+    <color name="md_theme_tertiaryContainer">#FFDDB2</color>
+    <color name="md_theme_onTertiaryContainer">#2B1700</color>
+
+    <!-- 7. Error -->
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+
+    <!-- 8. Background -->
+    <color name="md_theme_background">#F8FCF6</color>
+    <color name="md_theme_onBackground">#191C19</color>
+
+    <!-- 9. Surface -->
+    <color name="md_theme_surface">#F8FCF6</color>
+    <color name="md_theme_onSurface">#191C19</color>
+
+    <!-- 10. Surface Variant -->
+    <color name="md_theme_surfaceVariant">#DDE5D8</color>
+    <color name="md_theme_onSurfaceVariant">#414941</color>
+
+    <!-- 11. Outline -->
+    <color name="md_theme_outline">#717970</color>
+    <color name="md_theme_outlineVariant">#C1C9BD</color>
+
+    <!-- 12. Inverse / Scrim -->
+    <color name="md_theme_inverseSurface">#2E312D</color>
+    <color name="md_theme_inverseOnSurface">#EFF1EC</color>
+    <color name="md_theme_inversePrimary">#9DDBB5</color>
+    <color name="md_theme_scrim">#000000</color>
+
+    <!-- Extra Mesa 12 Brand Colors -->
+    <color name="mesa12_green">#0E7A43</color>
+    <color name="mesa12_green_dark">#064D2A</color>
+    <color name="mesa12_gold">#D99A2B</color>
+    <color name="mesa12_red">#D64545</color>
+    <color name="mesa12_card">#FFFFFF</color>
+    <color name="mesa12_card_shadow">#26000000</color>
+</resources>
