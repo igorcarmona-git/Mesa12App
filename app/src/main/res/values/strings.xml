@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Mesa 12</string>
+    <string name="icon_of_the_player">Icon of the player</string>
+    <string name="player_label">Player</string>
+    <string name="player_name">Player name</string>
+    <string name="icon_of_the_second_player">Icon of the second player</string>
+    <string name="matches">Matches</string>
+    <string name="_0">0</string>
+    <string name="truco_3">Truco +3</string>
+    <string name="truco_6">Truco +6</string>
+    <string name="truco_9">Truco +9</string>
+    <string name="truco_12">Truco +12</string>
+    <string name="_1">+1</string>
+    <string name="order">%s</string>
+    <string name="btn_historic_matches">Historic of Matches</string>
+    <string name="btn_clean_historic">Clean Historic</string>
+    <string name="btn_set_name_players">Set Name Players</string>
+    <string name="background_image_of_the_app">Background Image of the app</string>
 </resources>

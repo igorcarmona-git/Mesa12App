@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2026 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path android:fillColor="#F7FAFC" android:pathData="M0,0 H108 V108 H0 Z" />
+    <path android:fillColor="#4F46E5" android:fillAlpha="0.92" android:pathData="M82,-32 C110.72,-32 134,-8.72 134,20 C134,48.72 110.72,72 82,72 C53.28,72 30,48.72 30,20 C30,-8.72 53.28,-32 82,-32 Z" />
+    <path android:fillColor="#06B6D4" android:fillAlpha="0.82" android:pathData="M18,32 C48.93,32 74,57.07 74,88 C74,118.93 48.93,144 18,144 C-12.93,144 -38,118.93 -38,88 C-38,57.07 -12.93,32 18,32 Z" />
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.30" android:pathData="M0,0 H108 V26 C78,20 54,20 25,30 C13,34 5,37 0,39 Z" />
+    <group android:rotation="-14" android:pivotX="54" android:pivotY="54">
+        <path android:fillColor="#FFFFFF" android:fillAlpha="0.20" android:pathData="M-8,58 H116 V66 H-8 Z" />
+        <path android:fillColor="#FFFFFF" android:fillAlpha="0.12" android:pathData="M-8,76 H116 V82 H-8 Z" />
+    </group>
+</vector>
