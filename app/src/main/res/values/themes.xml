@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <style name="Base.Theme.Mesa12App" parent="Theme.Material3.DayNight.NoActionBar">
 
-        <!-- Material 3 Color Scheme -->
         <item name="colorPrimary">@color/md_theme_primary</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
@@ -37,11 +37,12 @@
         <item name="colorSurfaceInverse">@color/md_theme_inverseSurface</item>
         <item name="colorOnSurfaceInverse">@color/md_theme_inverseOnSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_inversePrimary</item>
+
         <item name="android:colorAccent">@color/md_theme_primary</item>
 
-        <!-- System Bars -->
-        <item name="android:statusBarColor">@color/md_theme_background</item>
-        <item name="android:navigationBarColor">@color/md_theme_background</item>
+        <!-- System Bars - Light -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
 
         <!-- Window -->
@@ -50,7 +51,7 @@
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:windowDisablePreview">true</item>
 
-        <!-- Material Shape -->
+        <!-- Shapes -->
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mesa12.Small</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mesa12.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mesa12.Large</item>
@@ -59,7 +60,6 @@
 
     <style name="Theme.Mesa12App" parent="Base.Theme.Mesa12App" />
 
-    <!-- Shapes inspirados em cartas arredondadas -->
     <style name="ShapeAppearance.Mesa12.Small" parent="ShapeAppearance.Material3.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">8dp</item>

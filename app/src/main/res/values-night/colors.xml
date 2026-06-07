@@ -2,63 +2,71 @@
 <resources>
     <!-- Mesa 12 - Dark Theme -->
 
-    <!-- 1. Primary -->
-    <color name="md_theme_primary">#9DDBB5</color>
-    <color name="md_theme_onPrimary">#00391D</color>
+    <!-- Material 3 -->
+    <color name="md_theme_primary">#19B86F</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
 
-    <!-- 2. Primary Container -->
-    <color name="md_theme_primaryContainer">#00522C</color>
-    <color name="md_theme_onPrimaryContainer">#B9F6D0</color>
+    <color name="md_theme_primaryContainer">#075B32</color>
+    <color name="md_theme_onPrimaryContainer">#E8FFF2</color>
 
-    <!-- 3. Secondary -->
-    <color name="md_theme_secondary">#C3CCB5</color>
-    <color name="md_theme_onSecondary">#2D3327</color>
+    <color name="md_theme_secondary">#B7DCC5</color>
+    <color name="md_theme_onSecondary">#0E1F16</color>
 
-    <!-- 4. Secondary Container -->
-    <color name="md_theme_secondaryContainer">#434A3C</color>
-    <color name="md_theme_onSecondaryContainer">#DFE8CF</color>
+    <color name="md_theme_secondaryContainer">#1F3528</color>
+    <color name="md_theme_onSecondaryContainer">#E4F5E9</color>
 
-    <!-- 5. Tertiary -->
-    <color name="md_theme_tertiary">#FFB95C</color>
-    <color name="md_theme_onTertiary">#482900</color>
+    <color name="md_theme_tertiary">#F0B548</color>
+    <color name="md_theme_onTertiary">#2B1A00</color>
 
-    <!-- 6. Tertiary Container -->
-    <color name="md_theme_tertiaryContainer">#6A3D00</color>
-    <color name="md_theme_onTertiaryContainer">#FFDDB2</color>
+    <color name="md_theme_tertiaryContainer">#523600</color>
+    <color name="md_theme_onTertiaryContainer">#FFE4AA</color>
 
-    <!-- 7. Error -->
-    <color name="md_theme_error">#FFB4AB</color>
-    <color name="md_theme_onError">#690005</color>
-    <color name="md_theme_errorContainer">#93000A</color>
+    <color name="md_theme_error">#FF6B6B</color>
+    <color name="md_theme_onError">#2B0000</color>
+    <color name="md_theme_errorContainer">#5C1111</color>
     <color name="md_theme_onErrorContainer">#FFDAD6</color>
 
-    <!-- 8. Background -->
-    <color name="md_theme_background">#101510</color>
-    <color name="md_theme_onBackground">#E0E4DD</color>
+    <color name="md_theme_background">#070A08</color>
+    <color name="md_theme_onBackground">#F4FFF7</color>
 
-    <!-- 9. Surface -->
-    <color name="md_theme_surface">#101510</color>
-    <color name="md_theme_onSurface">#E0E4DD</color>
+    <color name="md_theme_surface">#0D120F</color>
+    <color name="md_theme_onSurface">#F4FFF7</color>
 
-    <!-- 10. Surface Variant -->
-    <color name="md_theme_surfaceVariant">#414941</color>
-    <color name="md_theme_onSurfaceVariant">#C1C9BD</color>
+    <color name="md_theme_surfaceVariant">#1A261D</color>
+    <color name="md_theme_onSurfaceVariant">#D6E7DA</color>
 
-    <!-- 11. Outline -->
-    <color name="md_theme_outline">#8B9388</color>
-    <color name="md_theme_outlineVariant">#414941</color>
+    <color name="md_theme_outline">#7FA58D</color>
+    <color name="md_theme_outlineVariant">#314638</color>
 
-    <!-- 12. Inverse / Scrim -->
-    <color name="md_theme_inverseSurface">#E0E4DD</color>
-    <color name="md_theme_inverseOnSurface">#2E312D</color>
+    <color name="md_theme_inverseSurface">#EAF5EC</color>
+    <color name="md_theme_inverseOnSurface">#111812</color>
     <color name="md_theme_inversePrimary">#0E7A43</color>
     <color name="md_theme_scrim">#000000</color>
 
-    <!-- Extra Mesa 12 Brand Colors -->
-    <color name="mesa12_green">#9DDBB5</color>
-    <color name="mesa12_green_dark">#052C19</color>
-    <color name="mesa12_gold">#FFB95C</color>
-    <color name="mesa12_red">#FFB3B3</color>
-    <color name="mesa12_card">#F5F7F2</color>
-    <color name="mesa12_card_shadow">#66000000</color>
+    <!-- Mesa 12 -->
+    <color name="mesa12_green">#19B86F</color>
+    <color name="mesa12_green_dark">#064D2A</color>
+    <color name="mesa12_green_light">#38F097</color>
+
+    <color name="mesa12_gold">#F0B548</color>
+    <color name="mesa12_red">#FF6B6B</color>
+
+    <!-- Textos sobre a imagem no modo escuro -->
+    <color name="mesa12_text_primary">#F4FFF7</color>
+    <color name="mesa12_text_secondary">#D6E7DA</color>
+    <color name="mesa12_text_muted">#AFC2B4</color>
+
+    <!-- Botões principais -->
+    <color name="mesa12_button">#12A866</color>
+    <color name="mesa12_button_pressed">#0E7A43</color>
+    <color name="mesa12_button_text">#FFFFFF</color>
+
+    <!-- Botões secundários no modo escuro -->
+    <color name="mesa12_card">#CC111812</color>
+    <color name="mesa12_card_light">#E61A261D</color>
+    <color name="mesa12_card_text">#F4FFF7</color>
+    <color name="mesa12_card_shadow">#99000000</color>
+
+    <!-- Overlay mais forte no modo escuro -->
+    <color name="mesa12_background_overlay">#99000000</color>
 </resources>

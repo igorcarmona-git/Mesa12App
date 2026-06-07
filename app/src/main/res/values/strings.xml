@@ -16,4 +16,16 @@
     <string name="btn_clean_historic">Clean Historic</string>
     <string name="btn_set_name_players">Set Name Players</string>
     <string name="background_image_of_the_app">Background Image of the app</string>
+    <string name="title_set_names">Set Player Names</string>
+    <string name="hint_player_1">Player 1 Name</string>
+    <string name="hint_player_2">Player 2 Name</string>
+    <string name="btn_save">Save Names</string>
+    <string name="title_historic">Match History</string>
+    <string name="wins_label">Wins: %s</string>
+    <string name="btn_back">Back</string>
+    <string name="player_1_default">Player 1</string>
+    <string name="player_2_default">Player 2</string>
+    <string name="ic_lider_of_the_match">Icon lider of the match</string>
+    <string name="leader_message">%s está na liderança!</string>
+    <string name="tied_match">A partida está empatada!</string>
 </resources>

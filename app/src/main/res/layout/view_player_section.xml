@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="@dimen/activity_horizontal_margin">
 
     <ImageView
         android:id="@+id/ic_player"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/player_icon_size"
+        android:layout_height="@dimen/player_icon_size"
         android:contentDescription="@string/icon_of_the_player"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_player" />
+        app:srcCompat="@drawable/ic_player"
+        app:tint="@color/mesa12_green_light" />
 
     <TextView
         android:id="@+id/tv_playerNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/spacing_medium"
         android:text="@string/player_name"
-        android:textSize="20sp"
+        android:textColor="@color/mesa12_text_primary"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/ic_player"
         app:layout_constraintTop_toTopOf="@+id/ic_player" />
 
@@ -29,7 +32,9 @@
         android:id="@+id/tv_playerNameValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:textColor="@color/mesa12_text_secondary"
+        android:textSize="@dimen/text_size_small"
         app:layout_constraintStart_toStartOf="@+id/tv_playerNameLabel"
         app:layout_constraintTop_toBottomOf="@+id/tv_playerNameLabel"
         tools:text="Player Name" />
@@ -38,11 +43,11 @@
         android:id="@+id/flow_player"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/spacing_medium"
         app:constraint_referenced_ids="bt_win1,bt_win3,bt_win6,bt_win9,bt_win12"
-        app:flow_horizontalGap="20dp"
+        app:flow_horizontalGap="14dp"
         app:flow_horizontalStyle="packed"
-        app:flow_verticalGap="4dp"
+        app:flow_verticalGap="@dimen/spacing_small"
         app:flow_wrapMode="aligned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,8 +55,11 @@
 
     <Button
         android:id="@+id/bt_win1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/win_button_size"
+        android:layout_height="@dimen/win_button_size"
+        android:backgroundTint="@color/mesa12_button"
+        android:gravity="center"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
@@ -60,67 +68,93 @@
         android:minHeight="0dp"
         android:padding="0dp"
         android:text="@string/_1"
-        android:textSize="14sp"
-        app:cornerRadius="8dp" />
+        android:textColor="@color/mesa12_button_text"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corner_radius_small" />
 
     <Button
         android:id="@+id/bt_win3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/win_button_size"
+        android:layout_height="@dimen/win_button_size"
+        android:backgroundTint="@color/mesa12_button"
+        android:gravity="center"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
+        android:maxLines="2"
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:padding="0dp"
         android:text="@string/truco_3"
-        android:textSize="14sp"
-        app:cornerRadius="8dp" />
+        android:textColor="@color/mesa12_button_text"
+        android:textSize="@dimen/text_size_tiny"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corner_radius_small" />
 
     <Button
         android:id="@+id/bt_win6"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/win_button_size"
+        android:layout_height="@dimen/win_button_size"
+        android:backgroundTint="@color/mesa12_button"
+        android:gravity="center"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
+        android:maxLines="2"
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:padding="0dp"
         android:text="@string/truco_6"
-        android:textSize="14sp"
-        app:cornerRadius="8dp" />
+        android:textColor="@color/mesa12_button_text"
+        android:textSize="@dimen/text_size_tiny"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corner_radius_small" />
 
     <Button
         android:id="@+id/bt_win9"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/win_button_size"
+        android:layout_height="@dimen/win_button_size"
+        android:backgroundTint="@color/mesa12_button"
+        android:gravity="center"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
+        android:maxLines="2"
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:padding="0dp"
         android:text="@string/truco_9"
-        android:textSize="14sp"
-        app:cornerRadius="8dp" />
+        android:textColor="@color/mesa12_button_text"
+        android:textSize="@dimen/text_size_tiny"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corner_radius_small" />
 
     <Button
         android:id="@+id/bt_win12"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/win_button_size"
+        android:layout_height="@dimen/win_button_size"
+        android:backgroundTint="@color/mesa12_button"
+        android:gravity="center"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
+        android:maxLines="2"
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:padding="0dp"
         android:text="@string/truco_12"
-        android:textSize="14sp"
-        app:cornerRadius="8dp" />
+        android:textColor="@color/mesa12_button_text"
+        android:textSize="@dimen/text_size_tiny"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corner_radius_small" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
