@@ -13,11 +13,11 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mesa12app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
+    private lateinit var binding: ActivityMainBinding
+    
+    private val gameManager = GameManager()
     private var numberOfMatches = 0
-    private var player1Points = 0
-    private var player2Points = 0
 
     // Launcher para abrir a tela de nomes e receber o resultado de volta
     private val setNameLauncher = registerForActivityResult(
@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         ViewCompat.setOnApplyWindowInsetsListener(binding.mainView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -95,12 +96,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * Configura os botões de adicionar pontos (+1, +3, etc) de uma seção de jogador.
+     * Configura os botões de adicionar pontos (+1, +3, etc) de uma sessão de jogador.
      */
     private fun setupPointsListeners(playerNum: Int) {
         val section = if (playerNum == 1) binding.player1Section else binding.player2Section
 
-        // Mapeia cada botão ao seu respectivo valor de pontos
+        // Mapeia cada botão ao seu respetivo valor de pontos
         val winButtons = listOf(
             section.btWin1 to 1,
             section.btWin3 to 3,
@@ -117,12 +118,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addPoints(playerNum: Int, points: Int) {
-        if (playerNum == 1) {
-            player1Points += points
-            if (player1Points >= 12) recordWin(1)
-        } else {
-            player2Points += points
-            if (player2Points >= 12) recordWin(2)
+        val isWin = gameManager.addPoints(playerNum, points)
+        if (isWin) {
+            recordWin(playerNum)
         }
     }
 
@@ -148,8 +146,8 @@ class MainActivity : AppCompatActivity() {
 
         numberOfMatches++
         updateMatchCountDisplay()
-        updateLeaderDisplay() // Atualiza a liderança após uma vitória
-        resetMatchPoints()
+        updateLeaderDisplay() 
+        gameManager.resetPoints()
     }
 
     private fun updateLeaderDisplay() {
@@ -159,7 +157,6 @@ class MainActivity : AppCompatActivity() {
         val p1Name = sharedPref.getString("player1_name", "Jogador 1") ?: "Jogador 1"
         val p2Name = sharedPref.getString("player2_name", "Jogador 2") ?: "Jogador 2"
 
-        // Se ninguém ganhou nada ainda, esconde o ‘banner’
         if (p1Wins == 0 && p2Wins == 0) {
             binding.containerLeaderMatch.visibility = View.GONE
             return
@@ -178,11 +175,6 @@ class MainActivity : AppCompatActivity() {
                 binding.tvLiderMatch.text = getString(R.string.tied_match)
             }
         }
-    }
-
-    private fun resetMatchPoints() {
-        player1Points = 0
-        player2Points = 0
     }
 
     private fun resetHistoricalData() {
