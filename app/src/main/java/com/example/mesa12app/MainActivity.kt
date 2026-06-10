@@ -222,8 +222,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun resetHistoricalData() {
         val sharedPref = getSharedPreferences("Mesa12Prefs", MODE_PRIVATE)
-
-        // Zera as vitórias dos dois jogadores
         sharedPref.edit {
             putInt("player1_wins", 0)
             putInt("player2_wins", 0)
