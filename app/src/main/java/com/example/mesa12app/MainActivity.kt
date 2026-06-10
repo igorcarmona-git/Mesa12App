@@ -13,7 +13,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mesa12app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
     
     private val gameManager = GameManager()
